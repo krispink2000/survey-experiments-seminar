@@ -9,11 +9,11 @@ from otree.api import (
     currency_range,
 )
 
-author = 'your names and team objective go here'
-doc = 'Your app description goes here'
+author = 'Krispin Krüger'
+doc = 'This is a test survey to try out oTree'
 
 class Constants(BaseConstants):
-    name_in_url = 'survey-example'
+    name_in_url = 'Survey for attitudes towards migrants'
     players_per_group = None
     num_rounds = 1
 
