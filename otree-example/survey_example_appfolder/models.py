@@ -34,7 +34,7 @@ class Subsession(BaseSubsession):
             #we use a python function here from 'random' we imported earlier
             p.group_assignment = random.Random().randint(0, 1)
             #or:
-            #p.group_assignment = random_number(0,2)
+            #p.group_assignment = random_number(0,2) #could be used too but must be created first before use
     
 class Group(BaseGroup):
     counter = models.IntegerField(initial = 0)
