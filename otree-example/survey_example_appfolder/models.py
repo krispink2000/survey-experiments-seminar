@@ -27,10 +27,10 @@ class Group(BaseGroup):
 
 class Player(BasePlayer):
 #The Variables are structured on the base of pages
-    entry_question = models.StringField(label="Hi how are you doing?")
-    name_question = models.StringField(label="What's the name your grandmother called you growing up?")
-    age_question = models.IntegerField(label="How old do you feel today? (And now be honest to yourself and type in your actual age:)):", max= 100, min=1)
-    food_question = models.StringField(label="What is the food you think of when you want to feel good?")
+    entry_question = models.StringField(label="Hi how are you doing?", blank=True)
+    name_question = models.StringField(label="What's the name your grandmother called you growing up?", blank=True)
+    age_question = models.IntegerField(label="How old do you feel today? (And now be honest to yourself and type in your actual age:)):", max= 100, min=1, blank=True)
+    food_question = models.StringField(label="What is the food you think of when you want to feel good?", blank=True)
     goodness_indicator = models.IntegerField(
         label="How good does the food make you feel when you eat it?",
         choices=[
@@ -45,4 +45,4 @@ class Player(BasePlayer):
             [9, '9'],
             [10, '10 (I could die after eating this)'],
         ],
-        widget=widgets.RadioSelect,)                      
+        widget=widgets.RadioSelect,blank=True)                      
