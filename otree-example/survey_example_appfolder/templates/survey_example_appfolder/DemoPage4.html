@@ -1,0 +1,15 @@
+{% load otree static %}
+
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+    <h2> Krüger survey about some nice memories </h2>
+    <p><b>How good does the food make you feel when you eat it?</b></p>
+    {{ formfield "goodness_indicator" }}
+
+    <button class="otree-btn-next btn btn-primary next-button otree-next-button">
+        Next
+    </button>
+{% endblock %}
