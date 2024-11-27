@@ -1,12 +1,21 @@
-{% extends "global/Page.html" %}
+{% extends "global/Global_Welcome.html" %}
 {% load otree static %}
 
 {% block title %}
+<h2> Krüger survey-example for the tutorial on Designing and Implementing survey-experiments</h2>
+    <hr>
 {% endblock %}
 
 {% block content %}
+<!-- meta data about the participants, detected in the global document 'GlobalWelcome.html' -->
+<input id="device_type" type="hidden" name="device_type" />
+<input id="operating_system" type="hidden" name="operating_system" />
+<input id="screen_height" type="hidden" name="screen_height" />
+<input id="screen_width" type="hidden" name="screen_width" />
+
+<input id="time_start" type="hidden" name="time_start" />
 <br>
-<h2> Krüger survey-example for the tutorial on Designing and Implementing survey-experiments </h2>
+<h3> Krüger survey-example for the tutorial on Designing and Implementing survey-experiments </h3>
     <hr>
     Hi there! This is gonna be a short survey about your favorite food with the hope someone acutally clicks through this honestly and has some nice remembrance of their childhood!<br>Please click the "Next"-Button to begin the survey
     <br><br><br>
